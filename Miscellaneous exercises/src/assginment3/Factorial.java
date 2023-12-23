@@ -1,4 +1,4 @@
-package assginment4;
+package assginment3;
 import java.util.Scanner;
 
 /**
