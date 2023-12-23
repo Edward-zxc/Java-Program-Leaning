@@ -5,10 +5,9 @@ package cn.zzx.obj.fifth;
  */
 public abstract class Employee {
     double basicSalary;
-    Employee(double basicSalary){
+    Employee (double basicSalary){
         this.basicSalary=basicSalary;
     }
-    public void calculateSalary(){
-
+    void calculateSalary(){
     }
 }

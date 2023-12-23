@@ -5,13 +5,11 @@ package cn.zzx.obj.fourth;
  */
 public class Test {
     public static void main(String[] args) {
-        //Rectangle
-        Rectangle rectangle = new Rectangle(1,1);
-        rectangle.length();
-        rectangle.area();
-        //Round
-        Round round = new Round(1);
+        Round round =new Round(3);
         round.length();
         round.area();
+        Rectangle rectangle = new Rectangle(2,4);
+        rectangle.area();
+        rectangle.length();
     }
 }

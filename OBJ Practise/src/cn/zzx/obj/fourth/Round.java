@@ -1,25 +1,24 @@
 package cn.zzx.obj.fourth;
 
+
 /**
  * @author 33133
  */
 public class Round implements Shape{
     private int radius;
-    public Round(){
-        this.radius=0;
-    }
-    public Round(int radius){
+    Round(int radius){
         this.radius=radius;
     }
+    Round(){
+    }
+
     @Override
     public void length() {
-        double length = 2 * Math.PI * radius;
-        System.out.println("圆的周长为: "+length);
+        System.out.println("圆的周长为："+radius*2*Math.PI);
     }
 
     @Override
     public void area() {
-        double area = radius * radius * Math.PI;
-        System.out.println("圆的面积为: "+area);
+        System.out.println("圆的面积为："+radius*radius*Math.PI);
     }
 }

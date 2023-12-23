@@ -1,17 +1,13 @@
 package cn.zzx.obj.fifth;
 
-/**
- * @author 33133
- */
 public class Test {
-        static void show(Employee employee){
-            employee.calculateSalary();
-        }
-
+    static void show(Employee employee){
+        employee.calculateSalary();
+    }
     public static void main(String[] args) {
-        Manger manger = new Manger(50000.33, 5000.24);
-        Sales sales = new Sales(30000.25, 4000.26);
-        show(manger);
+        Employee manager = new Manager(50000,5000);
+        Employee sales = new Sales(40000.00,4000);
+        show(manager);
         show(sales);
     }
 }
