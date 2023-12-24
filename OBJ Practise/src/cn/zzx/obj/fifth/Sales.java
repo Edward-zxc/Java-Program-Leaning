@@ -1,10 +1,10 @@
 package cn.zzx.obj.fifth;
 
 /**
- * @author 33133
+ * @author zhou
  */
 public class Sales extends Employee{
-    double commission;
+    private final double commission;
     Sales(double basicSalary,double commission){
         super(basicSalary);
         this.commission=commission;

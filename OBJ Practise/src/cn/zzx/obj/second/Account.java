@@ -5,22 +5,22 @@ package cn.zzx.obj.second;
  */
 public class Account {
     String uerName;
-    private double Balance;
+    private double balance;
 
     Account(String userName) {
         this.uerName=userName;
-        this.Balance=0;
+        this.balance=0;
     }
     // Methods of saving money 存钱方法
     public void depositMoney(int amount){
-        Balance += amount;
-        System.out.println("余额为："+Balance);
+        balance += amount;
+        System.out.println("余额为："+balance);
     }
     // Method of withdrawal 取钱方法
     public void withdrawMoney(int amount){
-        if (Balance >= amount) {
-            Balance -= amount;
-            System.out.println("取出："+amount+","+"余额为："+Balance);
+        if (balance >= amount) {
+            balance -= amount;
+            System.out.println("取出："+amount+","+"余额为："+balance);
         }
         else {
             System.out.println("余额不足");

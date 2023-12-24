@@ -4,7 +4,7 @@ package cn.zzx.obj.fifth;
  * @author 33133
  */
 public class Manager extends Employee{
-    double performancePay;
+    private final double performancePay;
     Manager(double basicSalary,double performancePay) {
         super(basicSalary);
         this.performancePay=performancePay;

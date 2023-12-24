@@ -4,15 +4,15 @@ package cn.zzx.obj.first;
  * @author 33133
  */
 public class Auto {
-    String Brand;
-    int Speed;
-    public Auto(String Band,int Speed)
+    String brand;
+    int speed;
+    public Auto(String brand,int speed)
     {
-        this.Brand=Band;
-        this.Speed=Speed;
+        this.brand=brand;
+        this.speed=speed;
     }
     public void showInfo()
     {
-        System.out.println( Brand + "'s speed is" + Speed);
+        System.out.println( brand + "'s speed is" + speed);
     }
 }
