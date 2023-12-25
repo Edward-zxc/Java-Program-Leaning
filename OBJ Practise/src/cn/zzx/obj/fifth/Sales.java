@@ -13,6 +13,6 @@ public class Sales extends Employee{
     @Override
     void calculateSalary() {
         double sumSales = basicSalary +commission;
-        System.out.println("销售人员的工资高为:"+sumSales);
+        System.out.println("销售人员的工资为:"+sumSales);
     }
 }
