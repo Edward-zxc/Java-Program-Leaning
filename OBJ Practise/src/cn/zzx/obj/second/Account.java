@@ -4,34 +4,30 @@ package cn.zzx.obj.second;
  * @author 33133
  */
 public class Account {
-    String uerName;
-    private double balance;
-
-    Account(String userName) {
-        this.uerName=userName;
-        this.balance=0;
+    String userName;
+    private int balance;
+    Account(String userName,int balance){
+        this.balance=balance;
+        this.userName=userName;
     }
-    // Methods of saving money 存钱方法
-    public void depositMoney(int amount){
-        balance += amount;
+    public void depositMoney(int deposit){
+        balance += deposit;
         System.out.println("余额为："+balance);
     }
-    // Method of withdrawal 取钱方法
-    public void withdrawMoney(int amount){
-        if (balance >= amount) {
-            balance -= amount;
-            System.out.println("取出："+amount+","+"余额为："+balance);
-        }
-        else {
+    public void withdrawMoney(int drawMoney){
+        if (balance < drawMoney) {
             System.out.println("余额不足");
+        }
+        else if (balance > drawMoney) {
+            balance -= drawMoney;
+            System.out.println("余额为："+balance);
         }
     }
 
     public static void main(String[] args) {
-        Account account = new Account("Sarah");
-        //存钱
-        account.depositMoney(200);
-        //取钱
-        account.withdrawMoney(100);
+        Account account1 = new Account("Sarah",8000);
+        Account account2 = new Account("Cathy",8000);
+        account1.withdrawMoney(9000);
+        account2.depositMoney(1000);
     }
 }
