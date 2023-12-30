@@ -25,7 +25,7 @@ public class HashMapExample {
             System.out.println("key: " + key + " value: " + sites.get(key));
         }
 
-        // 返回所有value值
+
         Collection<String> values = sites.values();
         System.out.println("所有value值: " + values);
     }
