@@ -20,8 +20,6 @@ public class HashMapExample {
         sites.put(2, "Amazon");
         sites.put(3, "Taobao");
         sites.put(4, "Alibaba");
-
-
         /*
          *for (int i = 1; i <= sites.size(); i++) {
          *System.out.println("key: " + i + " value: " + sites.get(i));
