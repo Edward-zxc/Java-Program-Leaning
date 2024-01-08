@@ -1,6 +1,6 @@
 package assginment4;
 import java.util.HashMap;
-import java.util.Collection;
+
 
 /**
  * @author 33133
@@ -33,7 +33,8 @@ public class HashMapExample {
         }
 
         //输出所有value
-        Collection<String> values = sites.values();
-        System.out.println("所有value值: " + values);
+       for (String value : sites.values()){
+           System.out.println(value);
+       }
     }
 }

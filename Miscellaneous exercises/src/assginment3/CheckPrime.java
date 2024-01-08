@@ -23,7 +23,7 @@ public class CheckPrime {
                 System.out.println(number + "不是质数");
                 return;
             }
-            for (int i = 2; i < number; i++)//i<Math.sqrt(number)
+            for (int i = 2; i < number; i++)
             {
                 if (number % i == 0)
                 {
@@ -34,5 +34,4 @@ public class CheckPrime {
             System.out.println(number + "是质数");
         }
     }
-
 
