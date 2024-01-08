@@ -4,7 +4,7 @@ package finalJavaPredict.OBJ;
  * @author 33133
  */
 public class Student extends People{
-    private int age;
+    private final int age;
     Student (String name ,int age , int id){
         super(name, id);
         this.age=age;
