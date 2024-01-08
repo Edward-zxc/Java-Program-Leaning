@@ -6,7 +6,7 @@ package cn.zzx.obj.first;
 public class Car extends Auto{
     int wheels;
     public Car(String brand, int speed,int wheels) {
-        super(brand, speed);
+        super(brand,speed);
         this.wheels=wheels;
     }
 
