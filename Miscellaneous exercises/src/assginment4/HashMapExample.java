@@ -32,9 +32,5 @@ public class HashMapExample {
             System.out.println("key: " + key + " value: " + sites.get(key));
         }
 
-        //输出所有value
-       for (String value : sites.values()){
-           System.out.println(value);
-       }
     }
 }
