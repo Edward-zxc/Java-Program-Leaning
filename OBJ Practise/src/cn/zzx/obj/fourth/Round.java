@@ -9,9 +9,6 @@ public class Round implements Shape{
     Round(int radius){
         this.radius=radius;
     }
-    Round(){
-    }
-
     @Override
     public void length() {
         System.out.println("圆的周长为："+radius*2*Math.PI);
