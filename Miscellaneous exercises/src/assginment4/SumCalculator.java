@@ -17,6 +17,6 @@ public class SumCalculator {
     public static void main(String[] args)
     {
        int result = getSum();
-        System.out.println("1-50之间偶数和为："+result);
+        System.out.println("1-50之间的偶数和为："+result);
     }
 }
