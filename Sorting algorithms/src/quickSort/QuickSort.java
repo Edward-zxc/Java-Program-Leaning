@@ -46,10 +46,10 @@ public class QuickSort {
         return i + 1;
     }
 
-    // 交换数组中两个元素的方法
     public static void swap(int[] array, int i, int j) {
         int temp = array[i];
         array[i] = array[j];
         array[j] = temp;
+
     }
 }
